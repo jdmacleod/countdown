@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960E977A22C09E3100657539 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960E977922C09E3100657539 /* CoreData.framework */; };
 		96613FD722BDC6F300054D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96613FD622BDC6F300054D34 /* AppDelegate.swift */; };
 		96613FD922BDC6F300054D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96613FD822BDC6F300054D34 /* ViewController.swift */; };
 		96613FDC22BDC6F300054D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96613FDA22BDC6F300054D34 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		960E977922C09E3100657539 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		96613FD322BDC6F300054D34 /* countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96613FD622BDC6F300054D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96613FD822BDC6F300054D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960E977A22C09E3100657539 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		960E977822C09E3100657539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960E977922C09E3100657539 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96613FCA22BDC6F300054D34 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				96613FEA22BDC6F700054D34 /* countdownTests */,
 				96613FF522BDC6F700054D34 /* countdownUITests */,
 				96613FD422BDC6F300054D34 /* Products */,
+				960E977822C09E3100657539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -468,6 +482,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,7 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/countdown.app/countdown";
 			};
@@ -488,6 +503,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/countdown.app/countdown";
 			};
@@ -507,6 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdownUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = countdown;
 			};
@@ -526,6 +543,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WX2USNES7D;
 				INFOPLIST_FILE = countdownUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ieat.countdownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = countdown;
 			};
