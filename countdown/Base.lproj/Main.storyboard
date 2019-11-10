@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,16 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker hidden="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-hY-z2s">
-                                <rect key="frame" x="0.0" y="344" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="582868878.68487704">
-                                    <!--2019-06-22 04:01:18 +0000-->
-                                </date>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-hY-z2s">
+                                <rect key="frame" x="0.0" y="377" width="375" height="216"/>
                             </datePicker>
-                            <navigationBar hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9A-BI-Ler">
+                            <navigationBar hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9A-BI-Ler">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Edit Date" id="Dhv-sK-Hzf">
                                         <barButtonItem key="leftBarButtonItem" systemItem="save" id="XUv-7M-8fi">
@@ -43,30 +36,43 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days to Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGV-E4-P3O">
-                                <rect key="frame" x="110" y="224" width="154" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown to Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvu-nl-zlA">
+                                <rect key="frame" x="87.5" y="75" width="200.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Countdown to Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvu-nl-zlA">
-                                <rect key="frame" x="113" y="83" width="148" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpI-rz-wtn">
-                                <rect key="frame" x="125" y="141" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpI-rz-wtn">
+                                <rect key="frame" x="125" y="141" width="125" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Tap to Pick a Date"/>
                                 <connections>
                                     <action selector="selectDateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BgC-JQ-tKT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days to Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGV-E4-P3O">
+                                <rect key="frame" x="-69" y="234" width="513" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4Jh-Dm-r0I"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="top" secondItem="Lvu-nl-zlA" secondAttribute="bottom" constant="37" id="8v0-Or-0Am"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="zGV-E4-P3O" secondAttribute="centerX" id="AHO-QU-VGH"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bol-jI-zki"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="JFf-hY-z2s" secondAttribute="centerX" id="PrD-8X-tgi"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="JFf-hY-z2s" secondAttribute="leading" id="Qiy-dp-H8T"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="Lvu-nl-zlA" secondAttribute="centerX" id="Seg-eo-ai7"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TzJ-oS-SJB"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="dKz-EM-q3U"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="B9A-BI-Ler" secondAttribute="centerX" id="k1k-Zy-Oxp"/>
+                            <constraint firstItem="zGV-E4-P3O" firstAttribute="top" secondItem="TpI-rz-wtn" secondAttribute="bottom" constant="59" id="luo-XG-0f7"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="141" id="vCg-es-F1Q"/>
+                            <constraint firstItem="JFf-hY-z2s" firstAttribute="top" secondItem="zGV-E4-P3O" secondAttribute="bottom" constant="28" id="wzR-jH-KGT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -80,6 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-82" y="180"/>
         </scene>
     </scenes>
 </document>
