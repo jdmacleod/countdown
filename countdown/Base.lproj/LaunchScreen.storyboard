@@ -2,8 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,26 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="shW-QT-yPn">
-                                <rect key="frame" x="87" y="251" width="200" height="165"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="mcT-QI-h5K"/>
-                                    <constraint firstAttribute="width" constant="57" id="vrF-21-ae5"/>
-                                </constraints>
-                            </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkd-v6-93P">
-                                <rect key="frame" x="127" y="128" width="120" height="115"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkd-v6-93P">
+                                <rect key="frame" x="105" y="245" width="165" height="177"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="144"/>
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="shW-QT-yPn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="36x-fz-1Q4"/>
-                            <constraint firstItem="shW-QT-yPn" firstAttribute="top" secondItem="gkd-v6-93P" secondAttribute="bottom" constant="68" id="DqZ-Ke-fzV"/>
-                            <constraint firstItem="shW-QT-yPn" firstAttribute="centerX" secondItem="gkd-v6-93P" secondAttribute="centerX" id="Edj-GB-Ffn"/>
-                            <constraint firstItem="shW-QT-yPn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZUq-lg-K0N"/>
+                            <constraint firstItem="gkd-v6-93P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="M3U-MI-Lqg"/>
+                            <constraint firstItem="gkd-v6-93P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="245" id="NZx-LE-Yl5"/>
+                            <constraint firstItem="gkd-v6-93P" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VOi-j7-aUn"/>
+                            <constraint firstItem="gkd-v6-93P" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YmV-uP-rq1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

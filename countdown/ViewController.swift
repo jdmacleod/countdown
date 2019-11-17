@@ -57,6 +57,11 @@ class ViewController: UIViewController {
         let days = computeDateDifference(date: datePicker.date)
         updateButton(labelText: dateText)
         countdownLabel.text = String(days)
+        if days < 10 {
+            countdownLabel.textColor = UIColor.systemRed
+        } else {
+            countdownLabel.textColor = UIColor.label
+        }
         editNavBar.isHidden = true
         datePicker.isHidden = true
         let userDefaults = UserDefaults.standard

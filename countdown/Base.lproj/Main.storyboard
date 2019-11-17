@@ -2,8 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,41 +36,41 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown to Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvu-nl-zlA">
-                                <rect key="frame" x="87.5" y="75" width="200.5" height="29"/>
+                                <rect key="frame" x="87.5" y="94" width="200" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days to Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGV-E4-P3O">
+                                <rect key="frame" x="-69" y="234" width="513" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpI-rz-wtn">
-                                <rect key="frame" x="125" y="141" width="125" height="34"/>
+                                <rect key="frame" x="125" y="157" width="125" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Tap to Pick a Date"/>
                                 <connections>
                                     <action selector="selectDateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BgC-JQ-tKT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days to Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGV-E4-P3O">
-                                <rect key="frame" x="-69" y="234" width="513" height="115"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="B9A-BI-Ler" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4Jh-Dm-r0I"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="top" secondItem="Lvu-nl-zlA" secondAttribute="bottom" constant="37" id="8v0-Or-0Am"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="zGV-E4-P3O" secondAttribute="centerX" id="AHO-QU-VGH"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bol-jI-zki"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="JFf-hY-z2s" secondAttribute="centerX" id="PrD-8X-tgi"/>
-                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="JFf-hY-z2s" secondAttribute="leading" id="Qiy-dp-H8T"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="Lvu-nl-zlA" secondAttribute="centerX" id="Seg-eo-ai7"/>
-                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TzJ-oS-SJB"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="dKz-EM-q3U"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="B9A-BI-Ler" secondAttribute="centerX" id="k1k-Zy-Oxp"/>
-                            <constraint firstItem="zGV-E4-P3O" firstAttribute="top" secondItem="TpI-rz-wtn" secondAttribute="bottom" constant="59" id="luo-XG-0f7"/>
-                            <constraint firstItem="TpI-rz-wtn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="141" id="vCg-es-F1Q"/>
-                            <constraint firstItem="JFf-hY-z2s" firstAttribute="top" secondItem="zGV-E4-P3O" secondAttribute="bottom" constant="28" id="wzR-jH-KGT"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="JFf-hY-z2s" secondAttribute="leading" id="1z3-jw-j4g"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="top" secondItem="Lvu-nl-zlA" secondAttribute="bottom" constant="34" id="5TP-Eb-8aL"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="centerX" secondItem="zGV-E4-P3O" secondAttribute="centerX" id="8er-OQ-Ugd"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="centerX" secondItem="Lvu-nl-zlA" secondAttribute="centerX" id="8hU-In-78h"/>
+                            <constraint firstItem="TpI-rz-wtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="8uY-Bx-Gey"/>
+                            <constraint firstItem="Lvu-nl-zlA" firstAttribute="centerX" secondItem="TpI-rz-wtn" secondAttribute="centerX" id="9Ah-ze-xEG"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="K6c-ql-OJ1"/>
+                            <constraint firstItem="Lvu-nl-zlA" firstAttribute="top" secondItem="B9A-BI-Ler" secondAttribute="bottom" constant="30" id="Mjk-7W-zKE"/>
+                            <constraint firstItem="JFf-hY-z2s" firstAttribute="top" secondItem="zGV-E4-P3O" secondAttribute="bottom" constant="28" id="NqE-UK-otP"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SuT-K9-PTg"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="trailing" secondItem="JFf-hY-z2s" secondAttribute="trailing" id="TbU-Ne-aFZ"/>
+                            <constraint firstItem="zGV-E4-P3O" firstAttribute="top" secondItem="TpI-rz-wtn" secondAttribute="bottom" constant="43" id="V3x-2T-Gou"/>
+                            <constraint firstItem="B9A-BI-Ler" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tQO-Js-N15"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="180"/>
+            <point key="canvasLocation" x="68" y="56"/>
         </scene>
     </scenes>
 </document>
