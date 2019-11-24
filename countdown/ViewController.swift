@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let dateText = formatter.string(from: savedDate)
         let days = computeDateDifference(date: savedDate)
         updateButton(labelText: dateText)
-        countdownLabel.text = String(days)
+        updateDaysLabel(daysLabelNum: days)
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
@@ -56,12 +56,7 @@ class ViewController: UIViewController {
         let dateText = formatter.string(from: datePicker.date)
         let days = computeDateDifference(date: datePicker.date)
         updateButton(labelText: dateText)
-        countdownLabel.text = String(days)
-        if days < 10 {
-            countdownLabel.textColor = UIColor.systemRed
-        } else {
-            countdownLabel.textColor = UIColor.label
-        }
+        updateDaysLabel(daysLabelNum: days)
         editNavBar.isHidden = true
         datePicker.isHidden = true
         let userDefaults = UserDefaults.standard
@@ -70,6 +65,15 @@ class ViewController: UIViewController {
     
     func updateButton(labelText: String) {
         dateButton.setTitle(labelText, for: .normal)
+    }
+    
+    func updateDaysLabel(daysLabelNum: Int) {
+        if daysLabelNum < 10 {
+            countdownLabel.textColor = UIColor.systemRed
+        } else {
+            countdownLabel.textColor = UIColor.label
+        }
+        countdownLabel.text = String(daysLabelNum)
     }
     
     func computeDateDifference(date: Date) -> Int {
