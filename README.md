@@ -8,7 +8,7 @@ A sample application to track days until a single date. Written as an example, d
 XCode 11.3.1, Swift 5, iOS 13.0
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 Apple tutorials and WWDC presentations - and of course, [stack overflow](https://stackoverflow.com/questions/59976099/how-to-set-default-label-color-in-swift).
